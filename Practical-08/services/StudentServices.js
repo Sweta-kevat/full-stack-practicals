@@ -1,0 +1,26 @@
+const { Student } = require("../models");
+
+// Get all students
+const getAllStudents = async (req, res) => {
+    try {
+        const students = await Student.findAll();
+        res.status(200).json(students);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+};
+
+// Add a new student
+const createStudent = async (req, res) => {
+    try {
+        const student = await Student.create(req.body);
+        res.status(201).json(student);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+};
+
+module.exports = {
+    getAllStudents,
+    createStudent
+};

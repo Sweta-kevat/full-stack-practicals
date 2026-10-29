@@ -1,0 +1,2 @@
+Simple Interest: 100
+Compound Interest: 210.00000000000023

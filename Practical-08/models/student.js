@@ -1,0 +1,18 @@
+const { Model } = require("sequelize");
+
+module.exports = (sequelize, DataTypes) => {
+    class Student extends Model {}
+
+    Student.init({
+        rollNumber: DataTypes.STRING,
+        name: DataTypes.STRING,
+        email: DataTypes.STRING,
+        department: DataTypes.STRING,
+        semester: DataTypes.INTEGER
+    }, {
+        sequelize,
+        modelName: "Student"
+    });
+
+    return Student;
+};

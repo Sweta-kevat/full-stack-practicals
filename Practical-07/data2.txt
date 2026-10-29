@@ -1,0 +1,1 @@
+Hello Sweta! This is synchronous file reading.

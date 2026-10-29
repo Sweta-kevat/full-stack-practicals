@@ -1,0 +1,2 @@
+Hello Sweta!
+This is an example of Read Stream.

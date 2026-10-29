@@ -1,0 +1,2 @@
+Hello Sweta!
+This is Node.js Write Stream.
